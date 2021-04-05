@@ -6,17 +6,17 @@ This file contains guidance on how to accomplish this assignment. As always, the
 
 1. The first thing we need to do is load the tock sound. This can be done exactly like how we load the tick sound on line 2. Check out the `sounds` folder to see all the available mp3 files in this project.
 
-1. Now we need to know when every fourth beat is occuring. To do this, we'll need a new global variable that keeps track of the current metronome count. Create this variable somewhere above the `update()` function using `let`. Initialize this variable to `0`.
+1. Now we need to know when every fourth beat is occurring. To do this, we'll need a new global variable that keeps track of the current metronome count. Create this variable somewhere above the `update()` function using `let`. Initialize this variable to `0`.
 
-1. Everytime that `update()` is run, we need to increment our count. Do this by adding one to the count variable inside of the `update()` function.
+1. Every time that `update()` is run, we need to increment our count. Do this by adding one to the count variable inside of the `update()` function.
 
-1. Add a conditional in `update()` that plays `tock` if the count is divisble by four and otherwisie plays `tick`.
+1. Add a conditional in `update()` that plays `tock` if the count is divisible by four and otherwise plays `tick`.
 
 ## 1B
 
 1. In the HTML, create a new element somewhere that will contain the metronome count.
 
-1. Every time the `update()` function is called, we need to update the value of this metronome count element. We can do this by determing what the current count is based on the global count variable we defined previously.
+1. Every time the `update()` function is called, we need to update the value of this metronome count element. We can do this by determining what the current count is based on the global count variable we defined previously.
 
 1. Again, within `update()`, use `document.querySelector` to get the element that will contain the metronome count. Then, set the `.innerText` of that element to the current count.
 
