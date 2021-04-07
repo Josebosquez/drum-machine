@@ -8,8 +8,8 @@ body {
     align-items: center;
     justify-content: center;
     margin: none;
-    flex-direction: column;
-    background-color: #81b29a;
+    flex-direction: row;
+    background: linear-gradient(to right, yellow, red);
 }
 
 .tip {
@@ -27,7 +27,7 @@ body {
 }
 
 .background-left {
-    border-bottom: 400px solid #e07a5f;
+    border-bottom: 400px solid black;
     border-left: 100px solid transparent;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .background-right {
-    border-bottom: 400px solid #e07a5f;
+    border-bottom: 400px solid black;
     border-right: 100px solid transparent;
 }
 
@@ -49,7 +49,7 @@ body {
     width: 30%;
     background-color: #f4f1de;
     margin: 24px 0;
-    border: 6px dashed #e07a5f;
+    border: 6px dashed red;
 }
 
 @keyframes tick {
@@ -61,7 +61,7 @@ body {
 .arm {
     height: 300px;
     width: 20px;
-    background-color: #3d405b;
+    background: repeating-linear-gradient(blue, red);
     position: absolute;
     bottom: 5px;
     border-bottom-left-radius: 10px;
@@ -69,4 +69,81 @@ body {
     left: 165px;
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(to right,white, pink );
+    margin-top: 2em;
+}
+
+
+.right {
+    display: flex;
+    height: auto;
+    width: 30%;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    text-align: center;
+    height: auto;
+    width: 70%;
+    flex-direction: column;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.sound1 {
+    display: flex;
+    flex-direction: row;
+    }
+
+.sound2 {
+    display: flex;
+    flex-direction: row;
+    }
+
+.sound3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sound4 {
+    display: flex;
+    flex-direction: row;
+}
+
+#div-box {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    border:1px solid black;
+}
+
+
+#photo {
+    width: 50px;
+    height: auto;
+}
+
+#p {
+    margin-top: -400px;
+    margin-right: -200px;
+}
+
+#h6 {
+    margin-bottom: 20px;
+    margin-top: 28px;
 }
